@@ -1,6 +1,7 @@
 locals {
   redisgeek_config = {
     sp = data.azuread_service_principal.redisgeek.display_name
+    oid = data.azuread_service_principal.redisgeek.object_id
   }
 }
 
